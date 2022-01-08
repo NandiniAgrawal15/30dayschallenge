@@ -1,1 +1,25 @@
+**Problem Link**
+https://codeforces.com/contest/1352/problem/C
 
+**My solution:-**
+#include <bits/stdc++.h>
+#define ll long long int
+using namespace std;
+int main()
+{
+    ll test;
+    cin >> test;
+    while (test--)
+    {
+        ll n, k;
+        cin >> n >> k;
+        ll val = k/(n-1);
+        ll rem = k%(n-1);
+        if(rem==0){
+            cout<<((n*val)-1)<<endl;
+        }
+        else{
+            cout<<(n*val)+rem<<endl;
+        }
+    }
+}
